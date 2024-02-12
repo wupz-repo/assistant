@@ -57,7 +57,7 @@ echo.
 echo ServerTokens Prod
 echo ServerSignature Off
 echo.
-echo ErrorLog "${SRVROOT}/logs/ap-httpd-error.log"
+echo ErrorLog "${SRVROOT}/logs/assistant-error.log"
 echo LogLevel emerg
 echo.
 echo ^<IfModule log_config_module^>
@@ -66,7 +66,7 @@ echo     LogFormat ^"%h %l %u %t \^"%r\" %^>s %b" common
 echo     ^<IfModule logio_module^>
 echo         LogFormat ^"%h %l %u %t \"%r\" %^>s %b \"%{Referer}i\" \"%{User-Agent}i\" %I %O^" combinedio
 echo     ^</IfModule^>
-echo     CustomLog "${SRVROOT}/logs/ap-httpd-access.log" common
+echo     CustomLog "${SRVROOT}/logs/assistant-access.log" common
 echo ^</IfModule^>
 echo.
 echo ^<VirtualHost 0.0.0.0:8800^>
@@ -76,8 +76,8 @@ echo     ^<Directory "${SRVROOT}/htdocs/public"^>
 echo         Options Indexes FollowSymLinks MultiViews
 echo         AllowOverride All
 echo     ^</Directory^>
-echo     ErrorLog "${SRVROOT}/logs/ap-web-error.log"
-echo     CustomLog "${SRVROOT}/logs/ap-web-access.log" common
+echo     ErrorLog "${SRVROOT}/logs/assistant-error.log"
+echo     CustomLog "${SRVROOT}/logs/assistant-access.log" common
 echo ^</VirtualHost^>
 )>release/conf/main.conf
 
