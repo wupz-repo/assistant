@@ -8,3 +8,6 @@ Windows 下绿色免费的 Apache + PHP 环境套件包。
 
 ## 更新
 1. 更新assistant系统服务名称 
+
+## 默认配置
+- Apache 端口：8800
