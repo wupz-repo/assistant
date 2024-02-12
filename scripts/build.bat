@@ -13,11 +13,6 @@ unzip temp/php_yaf-3.3.4-8.1-ts-vs16-x64.zip -d temp/php_yaf
 unzip temp/php_yaml-2.2.2-8.1-ts-vs16-x64.zip -d temp/php_yaml
 unzip temp/php_mongodb-1.13.0-8.1-ts-vs16-x64.zip -d temp/php_mongodb
 
-del /f release/bin/.gitkeep
-del /f release/logs/.gitkeep
-del /f release/modules/.gitkeep
-del /f release/php_ext/.gitkeep
-
 cp temp/httpd/Apache24/bin/httpd.exe release/bin/
 cp temp/httpd/Apache24/bin/libapr-1.dll release/bin/
 cp temp/httpd/Apache24/bin/libapriconv-1.dll release/bin/
