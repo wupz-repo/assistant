@@ -6,7 +6,7 @@ on:
       - '*'
 
 jobs:
-  build-Assistant:
+  Build-Assistant:
     runs-on: windows-latest
 
     steps:
